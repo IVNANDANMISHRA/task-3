@@ -1,0 +1,71 @@
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    
+    --padding-small: 5px;
+    --padding-medium: 10px;
+    --padding-large: 15px;
+    
+    --margin-small: 5px;
+    --margin-medium: 10px;
+    --margin-large: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-large);
+}
+
+.input {
+    font-size: var(--font-size-medium);
+    padding: var(--padding-medium);
+    margin: var(--margin-medium);
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input.large {
+    font-size: var(--font-size-large);
+    padding: var(--padding-large);
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+}
+
+.input::placeholder {
+    color: var(--color-secondary);
+}
+
+.button {
+    font-size: var(--font-size-medium);
+    padding: var(--padding-medium);
+    margin: var(--margin-medium);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button.primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
